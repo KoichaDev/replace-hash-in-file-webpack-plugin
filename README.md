@@ -1,6 +1,10 @@
-## Webpack plugin: replace-hash-in-file-webpack-plugin
+## Webpack plugin: replace-hashcontent-in-file-webpack-plugin
 
-This is a [webpack](http://webpack.github.io/) plugin that can replace content in file(s) after compilation is done. This is useful when you want to replace content in any kind of files(html, css, js etc) which are not processed by loaders.
+⚠️This is a fork from the original project https://github.com/jamieconnor/replace-hash-in-file-webpack-plugin#readme  
+
+------
+
+[Webpack](http://webpack.github.io/) plugin that can replace content in file(s) after compilation is done. This is useful when you want to replace content in any kind of files(html, css, js etc) which are not processed by loaders.
 
 Use \[hash] to insert the compilation hash into the search and replace when it is a string or a method returning a string i.e. not a regex.
 
@@ -10,7 +14,7 @@ Installation
 ============
 Install the plugin with npm:
 ```shell
-$ npm install replace-hash-in-file-webpack-plugin --save-dev
+$ npm i -D replace-hashcontent-in-file-webpack-plugin
 ```
 
 Basic Usage
@@ -18,7 +22,7 @@ Basic Usage
 Add the plugin to your webpack and config as follows:
 
 ```javascript
-    const ReplaceHashInFileWebpackPlugin = require('replace-hash-in-file-webpack-plugin');
+    const ReplaceHashContentInFileWebpackPlugin = require('replace-hashcontent-in-file-webpack-plugin');
     const webpackConfig = {
         entry: 'index.js',
         output: {
