@@ -1,6 +1,6 @@
 ## Webpack plugin: replace-hashcontent-in-file-webpack-plugin
 
-⚠️This is a fork from the original project https://github.com/jamieconnor/replace-hash-in-file-webpack-plugin#readme  
+⚠️This is a fork from the original project https://github.com/jamieconnor/replace-hash-in-file-webpack-plugin#readme. The only difference in here is that I modified the source code to work hashcontent instead
 
 ------
 
