@@ -24,7 +24,7 @@ function replace(file, rules, hash) {
   let template = fs.readFileSync(src, 'utf8');
   template = rules.reduce(
     (template, rule) => template.replace(
-      (typeof rule.search === 'string' ? rule.search.replace('[hash]', hash) : rule.search), (typeof rule.replace === 'string' ? rule.replace.replace('[hash]', hash) : rule.replace.bind(global)().replace('[hash]', hash))
+      (typeof rule.search === 'string' ? rule.search.replace('[hashcontent]', hash) : rule.search), (typeof rule.replace === 'string' ? rule.replace.replace('[hashcontent]', hash) : rule.replace.bind(global)().replace('[hashcontent]', hash))
     ),
     template
   );
